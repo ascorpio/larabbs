@@ -18,4 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', "pagesController@root")->name('root');
 
 // 该路由定义在此处 vendor/laravel/ui/src/AuthRouteMethods.php
-Auth::routes();
+Auth::routes(['verify' => true]);
