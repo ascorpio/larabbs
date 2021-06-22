@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', "pagesController@root")->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 
 // 该路由定义在此处 vendor/laravel/ui/src/AuthRouteMethods.php
 Auth::routes(['verify' => true]);
